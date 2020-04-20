@@ -7,6 +7,7 @@
   import Bullets from "./bullets.svelte";
   import login from "./login.svelte";
   import BlackList from "./blackList.svelte";
+  import CountryRates from "./countryRates.svelte";
   import { afterUpdate } from "svelte";
 
   
@@ -207,6 +208,16 @@
               id="BlackList"
               on:click={() => loadComp(BlackList)}>
               BlackList
+            </button>
+          </li>
+            <li>
+
+            <button
+              type="button"
+              class="btn btn-link"
+              id="countryRates"
+              on:click={() => loadComp(CountryRates)}>
+              Country Rates
             </button>
           </li>
 
