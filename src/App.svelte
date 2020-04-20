@@ -8,6 +8,7 @@
   import login from "./login.svelte";
   import BlackList from "./blackList.svelte";
   import CountryRates from "./countryRates.svelte";
+  import Matchs from "./matchs.svelte";
   import { afterUpdate } from "svelte";
 
   
@@ -218,6 +219,16 @@
               id="countryRates"
               on:click={() => loadComp(CountryRates)}>
               Country Rates
+            </button>
+          </li>
+             <li>
+
+            <button
+              type="button"
+              class="btn btn-link"
+              id="dictionary"
+              on:click={() => loadComp(Matchs)}>
+              Dictionary
             </button>
           </li>
 
